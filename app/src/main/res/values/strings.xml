@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Montando Meu PC</string>
+    <string name="project_name">Nome do Projeto</string>
+    <string name="button_clear">LIMPAR</string>
+    <string name="initial_date">Data de Início</string>
+    <string name="button_save">SALVAR</string>
+    <string name="save_datas">Dados salvos</string>
+    <string name="clear_fields">Campos limpos</string>
+    <string name="project_name_empty">Nome do projeto não pode estar vazio!</string>
+    <string name="initial_date_empty">Data de início não pode estar vazio!</string>
+
+    <string name="project_type">Tipo de Projeto</string>
+    <string name="building_from_scratch">Montagem do zero</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="maintenance">Manutenção</string>
+    <string name="empty_select">Nenhum tipo de projeto selecionado</string>
+
+    <string name="parts">Peças</string>
+    <string name="motherboard">Placa Mãe</string>
+    <string name="ram_memory">Memória Ram</string>
+    <string name="hdd">HD</string>
+    <string name="ssd">SSD</string>
+    <string name="graphics_card">Placa de Vídeo</string>
+    <string name="cabinet">Gabinete</string>
+    <string name="power_supply">Fonte de Alimentação</string>
+    <string name="water_cooler">Water Cooler</string>
+    <string name="air_cooler">Air Cooler</string>
+    <string name="fan_cooler">Fan Cooler</string>
+
+    <string name="operational_system">Sistema Operacional</string>
+    <string name="version_operational_system">Versão</string>
+    <string name="linux">Linux</string>
+    <string name="windows">Windows</string>
+
+    <string name="linux_ubuntu">Ubuntu</string>
+    <string name="linux_mint">Mint</string>
+    <string name="linux_kali">Kali</string>
+    <string name="linux_Fedora">Fedora</string>
+    <string name="linux_centOS">CentOS</string>
+    <string name="linux_manjaro">Manjaro</string>
+
+    <string name="windows_7">Windows 7</string>
+    <string name="windows_8">Windows 8</string>
+    <string name="windows_10">Windows 10</string>
+    <string name="windows_11">Windows 11</string>
+    <string name="project_type_empty">Selecione um tipo de projeto</string>
+</resources>

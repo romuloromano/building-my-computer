@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:text="@string/project_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:ems="10"
+            android:id="@+id/editTextProjectName"
+            android:inputType="textPersonName"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="371dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textViewInitialDate"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:text="@string/initial_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProjectName" />
+
+        <EditText
+            android:ems="10"
+            android:id="@+id/editTextInitialDate"
+            android:inputType="date"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewInitialDate" />
+
+        <TextView
+            android:id="@+id/textViewProjectType"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:text="@string/project_type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextInitialDate" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupProjectType"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewProjectType">
+
+            <RadioButton
+                android:id="@+id/radioButtonBuildingFromScratch"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/building_from_scratch" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUpgrade"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/upgrade" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMaintenance"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/maintenance" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewOperationalSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/operational_system"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroupProjectType" />
+
+        <Spinner
+            android:id="@+id/spinnerOperationalSystemVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="@+id/textViewOperationalSystemVersion"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOperationalSystemVersion" />
+
+        <TextView
+            android:id="@+id/textViewOperationalSystemVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/version_operational_system"
+            app:layout_constraintStart_toStartOf="@+id/spinnerOperationalSystem"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerOperationalSystem" />
+
+        <Spinner
+            android:id="@+id/spinnerOperationalSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/operational_system"
+            app:layout_constraintStart_toStartOf="@+id/textViewOperationalSystem"
+            app:layout_constraintTop_toBottomOf="@+id/textViewOperationalSystem" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMotherboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/motherboard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewParts" />
+
+        <CheckBox
+            android:id="@+id/checkBoxGraphicsCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/graphics_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxSSD" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ssd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxHDD" />
+
+        <CheckBox
+            android:id="@+id/checkBoxRamMemory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ram_memory"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMotherboard" />
+
+        <CheckBox
+            android:id="@+id/checkBoxHDD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/hdd"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRamMemory" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAirCooler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/air_cooler"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxWaterCooler"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxWaterCooler" />
+
+        <TextView
+            android:id="@+id/textViewParts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/parts"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerOperationalSystemVersion" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPowerSupply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/power_supply"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxCabinet"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxCabinet" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFanCooler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fan_cooler"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxAirCooler"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxAirCooler" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="saveFields"
+            android:text="@string/button_save"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxGraphicsCard"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWaterCooler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/water_cooler"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxPowerSupply"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxPowerSupply" />
+
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="clearFields"
+            android:text="@string/button_clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxFanCooler"
+            tools:ignore="MissingConstraints" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCabinet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:text="@string/cabinet"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/checkBoxMotherboard" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
