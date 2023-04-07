@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="operational_system">
+        <item>@string/linux</item>
+        <item>@string/windows</item>
+    </string-array>
+
+    <string-array name="operational_system_version_linux">
+        <item>@string/linux_ubuntu</item>
+        <item>@string/linux_mint</item>
+        <item>@string/linux_kali</item>
+        <item>@string/linux_Fedora</item>
+        <item>@string/linux_centOS</item>
+        <item>@string/linux_manjaro</item>
+    </string-array>
+
+    <string-array name="operational_system_version_windows">
+        <item>@string/windows_7</item>
+        <item>@string/windows_8</item>
+        <item>@string/windows_10</item>
+        <item>@string/windows_11</item>
+    </string-array>
+</resources>
